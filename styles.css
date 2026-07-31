@@ -26,7 +26,8 @@ body {
   height: 100vh;
 
   background-image: url("./img/bg.png");
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   display: flex;
   align-items: center;
@@ -42,12 +43,12 @@ main {
   width: 480px;
   border-radius: 1.5rem;
 
-  border: 1px solid #2f3279;
+  border: 1px solid #49494b;
   overflow-y: hidden;
 }
 
 form {
-  background-color: #141534;
+  background-color: #121213;
 
   display: flex;
   flex-direction: column;
@@ -57,7 +58,7 @@ form {
 
 label {
   font-size: 0.75rem;
-  color: #b2b8de;
+  color: #a0a0a2;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   margin-top: 1.25rem;
@@ -67,11 +68,11 @@ input,
 select {
   outline: 0;
 
-  color: #f1f2f6;
-  border: 1px solid #1f2151;
+  color: #c6c7c9;
+  border: 1px solid #a9a9b1;
   border-radius: 0.5rem;
 
-  background-color: #0e0f25;
+  background-color: #1d1d1f;
   padding: 1.25rem 1rem;
 
   font-family: "Inter", sans-serif;
@@ -85,7 +86,7 @@ select {
 
   background: url("./img/chevron-down.svg") no-repeat;
   background-position: calc(100% - 0.75rem) center !important;
-  background-color: #0e0f25;
+  background-color: #1d1d1f;
 
   cursor: pointer;
   font-size: 1rem;
@@ -99,18 +100,18 @@ option {
 
 input:focus,
 select:focus {
-  border: 1px solid #4a5dcd;
+  border: 1px solid #ededee;
 }
 
 button {
   height: 3.25rem;
 
-  background-color: #2f34ab;
+  background-color: #c7c7c9;
 
   border: none;
   border-radius: 0.5rem;
 
-  color: #f1f2f6;
+  color: #202021;
 
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -123,22 +124,20 @@ button {
 }
 
 button:hover {
-  background-color: #4a5dcd;
+  background-color: #f3f5f7;
 }
 
 button:focus {
-  outline: 1.5px solid #4a5dcd;
+  outline: 1.5px solid #cacaca;
 }
 
 footer {
-  background-color: #1f2151;
-  padding: 2.5rem;
+  background-color: #acacb0;
+  padding: 1.5rem;
   max-height: 196px;
 
   text-align: center;
   display: none;
-
-  overflow-y: scroll;
 }
 
 .show-result {
@@ -146,7 +145,7 @@ footer {
 }
 
 footer span {
-  color: #7d8dec;
+  color: #161717;
   font-size: 1rem;
   font-family: "IBM Plex Mono", monospace;
   margin-bottom: 0.5rem;
@@ -159,4 +158,9 @@ footer h1 {
   font-size: 2rem;
   line-height: 3rem;
   word-break: break-all;
+}
+
+#logo {
+  width: 50px;
+  height: auto;
 }
